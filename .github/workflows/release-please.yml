@@ -67,7 +67,7 @@ jobs:
         if: ${{ needs.release-please.outputs.release_created }}
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
         if: ${{ needs.release-please.outputs.release_created }}
 
       - name: Set up Docker Build
